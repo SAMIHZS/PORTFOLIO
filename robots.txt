@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samihzs.in/sitemap.xml
