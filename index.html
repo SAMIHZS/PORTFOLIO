@@ -1,436 +1,1204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sami Hassan | Cybersecurity Portfolio | VAPT & Ethical Hacking</title>
-  <meta name="description" content="Cybersecurity portfolio of Sami Hassan focusing on VAPT, penetration testing, and security tools." />
-  <meta name="keywords" content="cybersecurity student, ethical hacker portfolio, VAPT projects, penetration testing India" />
-  <meta name="author" content="Sami Hassan" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>
+                Shaik Sami Hassan - Cyber Security Portfolio
+        </title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "primary-container": "#4d8eff",
+                                                "on-tertiary": "#502400",
+                                                "tertiary": "#ffb786",
+                                                "error-container": "#93000a",
+                                                "on-surface-variant": "#c2c6d6",
+                                                "secondary": "#4edea3",
+                                                "tertiary-fixed-dim": "#ffb786",
+                                                "on-primary": "#002e6a",
+                                                "error": "#ffb4ab",
+                                                "surface-bright": "#363941",
+                                                "primary-fixed-dim": "#adc6ff",
+                                                "on-secondary-fixed-variant": "#005236",
+                                                "inverse-primary": "#005ac2",
+                                                "surface-container-highest": "#32353c",
+                                                "on-secondary-fixed": "#002113",
+                                                "secondary-container": "#00a572",
+                                                "on-tertiary-fixed-variant": "#723600",
+                                                "on-tertiary-fixed": "#311400",
+                                                "secondary-fixed-dim": "#4edea3",
+                                                "on-secondary": "#003824",
+                                                "surface-container": "#1d2027",
+                                                "on-primary-fixed-variant": "#004395",
+                                                "inverse-on-surface": "#2e3038",
+                                                "on-secondary-container": "#00311f",
+                                                "surface": "#10131a",
+                                                "on-primary-fixed": "#001a42",
+                                                "on-tertiary-container": "#461f00",
+                                                "background": "#10131a",
+                                                "on-error-container": "#ffdad6",
+                                                "tertiary-fixed": "#ffdcc6",
+                                                "surface-dim": "#10131a",
+                                                "surface-variant": "#32353c",
+                                                "surface-tint": "#adc6ff",
+                                                "outline-variant": "#424754",
+                                                "on-primary-container": "#00285d",
+                                                "primary": "#adc6ff",
+                                                "inverse-surface": "#e1e2ec",
+                                                "surface-container-lowest": "#0b0e15",
+                                                "surface-container-high": "#272a31",
+                                                "primary-fixed": "#d8e2ff",
+                                                "secondary-fixed": "#6ffbbe",
+                                                "on-surface": "#e1e2ec",
+                                                "on-background": "#e1e2ec",
+                                                "surface-container-low": "#191b23",
+                                                "tertiary-container": "#df7412",
+                                                "on-error": "#690005",
+                                                "outline": "#8c909f"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "md": "1.5rem",
+                                                "sm": "1rem",
+                                                "lg": "2.5rem",
+                                                "xs": "0.5rem",
+                                                "unit": "4px",
+                                                "xl": "4rem",
+                                                "gutter": "1.5rem",
+                                                "max-width": "1200px"
+                                        },
+                                        "fontFamily": {
+                                                "body-lg": ["Inter"],
+                                                "body-md": ["Inter"],
+                                                "h2": ["Inter"],
+                                                "h3": ["Inter"],
+                                                "label-sm": ["Inter"],
+                                                "code": ["monospace"],
+                                                "h1": ["Inter"]
+                                        },
+                                        "fontSize": {
+                                                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "h2": ["30px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                                                "h3": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                                                "label-sm": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                                                "code": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                                                "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                body {
+                        scroll-behavior: smooth;
+                }
+
+                .grid-bg {
+                        background-image: linear-gradient(to right, rgba(140, 144, 159, 0.1) 1px, transparent 1px),
+                                linear-gradient(to bottom, rgba(140, 144, 159, 0.1) 1px, transparent 1px);
+                        background-size: 40px 40px;
+                }
+        </style>
+        <link href="style.css" rel="stylesheet" />
 </head>
-<body>
 
-  <!-- ========== NAVBAR ========== -->
-  <header class="navbar" id="navbar">
-    <nav class="nav-container">
-      <a href="#home" class="nav-logo">SSH<span class="logo-dot">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+        <nav class="bg-slate-950/80 backdrop-blur-md font-inter tracking-tight docked full-width top-0 sticky z-50 border-b border-slate-800 flat no shadows text-slate-400"
+                id="navbar">
+                <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16 w-full max-w-[1200px]">
+                        <a class="text-xl font-black tracking-tighter text-slate-50" href="#">
+                                SSH
+                        </a>
+                        <div class="nav-menu hidden md:flex gap-md items-center flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-slate-950/95 md:bg-transparent p-6 md:p-0 border-b border-slate-800 md:border-none shadow-lg md:shadow-none"
+                                id="navMenu">
+                                <a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform nav-link"
+                                        href="#projects">
+                                        Projects
+                                </a>
+                                <a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform nav-link"
+                                        href="#certifications">
+                                        Certifications
+                                </a>
+                                <a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform nav-link"
+                                        href="#experience">
+                                        Experience
+                                </a>
+                                <a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform nav-link"
+                                        href="#labs">
+                                        Labs
+                                </a>
+                                <a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform nav-link"
+                                        href="#contact">
+                                        Contact
+                                </a>
+                        </div>
+                        <a class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded border border-transparent hover:bg-inverse-primary hover:text-on-primary transition-colors ease-in-out duration-200 hidden md:block"
+                                href="SHIAK%20SAMI%20HASSAN%20Cybersecurity%20Intern%20Resume.pdf" target="_blank">
+                                Resume
+                        </a>
+                        <button aria-expanded="false"
+                                class="md:hidden text-slate-400 hover:text-slate-100 focus:outline-none transition-colors"
+                                id="navToggle">
+                                <span class="material-symbols-outlined text-3xl">
+                                        menu
+                                </span>
+                        </button>
+                </div>
+        </nav>
+        <main class="flex-grow w-full max-w-[1200px] mx-auto px-gutter grid-bg">
+                <section class="min-h-[819px] flex flex-col justify-center py-xl reveal" id="home">
+                        <div class="max-w-3xl">
+                                <p class="font-code text-code text-primary mb-sm">
+                                        &gt;$ whoami
+                                </p>
+                                <h1 class="font-h1 text-h1 text-on-background mb-sm">
+                                        SAMI HZS
+                                </h1>
+                                <h2 class="font-h3 text-h3 text-outline mb-md">
+                                        Cybersecurity Student | Security Researcher | Future Security Engineer
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                                        Dedicated BCA (Honours) student meticulously building hands-on experience in
+                                        defensive security, vulnerability assessment, and security operations. Focused
+                                        on translating theoretical knowledge into practical, robust security
+                                        architectures.
+                                </p>
+                                <div class="flex flex-wrap gap-sm">
+                                        <a class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:bg-inverse-primary hover:text-on-primary transition-colors ease-in-out duration-200"
+                                                href="SHIAK%20SAMI%20HASSAN%20Cybersecurity%20Intern%20Resume.pdf"
+                                                target="_blank">
+                                                View Resume
+                                        </a>
+                                        <a class="bg-transparent text-primary border border-outline font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:border-primary hover:bg-primary/5 transition-all ease-in-out duration-200"
+                                                download=""
+                                                href="SHIAK%20SAMI%20HASSAN%20Cybersecurity%20Intern%20Resume.pdf">
+                                                Download Resume
+                                        </a>
+                                        <a class="bg-transparent text-primary border border-outline font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:border-primary hover:bg-primary/5 transition-all ease-in-out duration-200"
+                                                href="#contact">
+                                                <span class="material-symbols-outlined"
+                                                        style="font-variation-settings: 'FILL' 0;">
+                                                        mail
+                                                </span>
+                                                Contact
+                                        </a>
+                                </div>
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="about">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+                                <!-- About Block -->
+                                <div
+                                        class="md:col-span-7 bg-surface-container p-lg rounded-xl border border-surface-variant">
+                                        <h3
+                                                class="font-h3 text-h3 text-on-background flex items-center gap-xs mb-md border-b border-surface-variant pb-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        style="font-variation-settings: 'FILL' 1;">
+                                                        terminal
+                                                </span>
+                                                System Overview
+                                        </h3>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mb-sm">
+                                                I am a Bachelor of Computer Applications (Honours) student with a
+                                                rigorous focus on Cybersecurity. My current academic and practical
+                                                trajectory is centered around Vulnerability Assessment and Penetration
+                                                Testing (VAPT), Security Operations Center (SOC) methodologies, and
+                                                establishing strong defensive postures.
+                                        </p>
+                                        <p class="font-body-md text-body-md text-on-surface-variant">
+                                                I thrive in environments that demand meticulous analysis and continuous
+                                                learning, aiming to contribute meaningfully to organizational security
+                                                resilience.
+                                        </p>
+                                </div>
+                                <!-- Skills Block -->
+                                <div
+                                        class="md:col-span-5 bg-surface-container p-lg rounded-xl border border-surface-variant">
+                                        <h3
+                                                class="font-h3 text-h3 text-on-background flex items-center gap-xs mb-md border-b border-surface-variant pb-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        style="font-variation-settings: 'FILL' 1;">
+                                                        build
+                                                </span>
+                                                Toolkit
+                                        </h3>
+                                        <div class="space-y-md">
+                                                <div>
+                                                        <p class="font-label-sm text-label-sm text-outline mb-xs">
+                                                                Cybersecurity
+                                                        </p>
+                                                        <div class="flex flex-wrap gap-unit">
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Threat Awareness
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        VAPT Basics
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        SOC Fundamentals
+                                                                </span>
+                                                        </div>
+                                                </div>
+                                                <div>
+                                                        <p class="font-label-sm text-label-sm text-outline mb-xs">
+                                                                Tools &amp; Systems
+                                                        </p>
+                                                        <div class="flex flex-wrap gap-unit">
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Kali Linux
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Nmap
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Wireshark
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        TCP/IP
+                                                                </span>
+                                                        </div>
+                                                </div>
+                                                <div>
+                                                        <p class="font-label-sm text-label-sm text-outline mb-xs">
+                                                                Programming
+                                                        </p>
+                                                        <div class="flex flex-wrap gap-unit">
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Python
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        C
+                                                                </span>
+                                                                <span
+                                                                        class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">
+                                                                        Bash
+                                                                </span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="projects">
+                        <header class="mb-xl text-center md:text-left">
+                                <h2 class="font-h2 text-h2 text-on-background mb-4">
+                                        Strategic Deployments
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                                        A curated selection of technical projects focusing on vulnerability assessment,
+                                        custom automation, and infrastructure security. Each deployment demonstrates
+                                        applied methodologies in risk mitigation and secure software development
+                                        lifecycle practices.
+                                </p>
+                        </header>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                                <!-- Project 1: Featured (Takes 2 columns on lg screens) -->
+                                <article
+                                        class="col-span-1 md:col-span-2 lg:col-span-2 bg-[#1e293b] border border-[#334155] border-t-2 border-t-primary-container rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+                                        <div>
+                                                <div class="flex items-start justify-between mb-sm">
+                                                        <h2 class="font-h2 text-h2 text-on-background">
+                                                                Website Security Assessment - samihzs.in
+                                                        </h2>
+                                                        <span class="material-symbols-outlined text-primary-fixed-dim"
+                                                                style="font-variation-settings: 'FILL' 1;">
+                                                                security
+                                                        </span>
+                                                </div>
+                                                <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                                        Comprehensive Vulnerability Assessment and Penetration Testing
+                                                        (VAPT) executed on personal infrastructure. Identified critical
+                                                        misconfigurations, applied security patches, and hardened the
+                                                        web server against common OWASP Top 10 vectors.
+                                                </p>
+                                                <div class="flex flex-wrap gap-xs mb-lg">
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Burp Suite
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Nmap
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Linux Servers
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Web App Sec
+                                                        </span>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit"
+                                                        href="https://github.com/SAMIHZS/FUTURE_CS_01" target="_blank">
+                                                        <span class="material-symbols-outlined text-[18px]">
+                                                                code
+                                                        </span>
+                                                        View on GitHub
+                                                </a>
+                                        </div>
+                                </article>
+                                <!-- Project 2 -->
+                                <article
+                                        class="col-span-1 bg-[#1e293b] border border-[#334155] rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+                                        <div>
+                                                <div class="flex items-start justify-between mb-sm">
+                                                        <h3 class="font-h3 text-h3 text-on-background">
+                                                                Cybersecurity Learning Repository
+                                                        </h3>
+                                                </div>
+                                                <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                                        SecLearning: A structured, publicly available repository
+                                                        documenting ongoing research, lab walk-throughs, and
+                                                        methodologies for malware analysis and incident response.
+                                                </p>
+                                                <div class="flex flex-wrap gap-xs mb-lg">
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Markdown
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Git
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Documentation
+                                                        </span>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit"
+                                                        href="https://github.com/SAMIHZS/CYBERSECURITY-PROJECTS"
+                                                        target="_blank">
+                                                        <span class="material-symbols-outlined text-[18px]">
+                                                                folder_open
+                                                        </span>
+                                                        Explore Repository
+                                                </a>
+                                        </div>
+                                </article>
+                                <!-- Project 3 -->
+                                <article
+                                        class="col-span-1 bg-[#1e293b] border border-[#334155] rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+                                        <div>
+                                                <div class="flex items-start justify-between mb-sm">
+                                                        <h3 class="font-h3 text-h3 text-on-background">
+                                                                Attendance Management System
+                                                        </h3>
+                                                </div>
+                                                <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                                        A secure backend system developed for tracking attendance
+                                                        metrics, focusing on input sanitization, secure session
+                                                        handling, and database optimization.
+                                                </p>
+                                                <div class="flex flex-wrap gap-xs mb-lg">
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Python
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                SQL
+                                                        </span>
+                                                        <span
+                                                                class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                Cryptography
+                                                        </span>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit"
+                                                        href="https://github.com/SAMIHZS/ATTENDANCE-SYSTEM"
+                                                        target="_blank">
+                                                        <span class="material-symbols-outlined text-[18px]">
+                                                                code
+                                                        </span>
+                                                        View on GitHub
+                                                </a>
+                                        </div>
+                                </article>
+                                <!-- Project 4: Code block emphasis -->
+                                <article
+                                        class="col-span-1 md:col-span-2 lg:col-span-2 bg-[#1e293b] border border-[#334155] rounded flex flex-col lg:flex-row gap-lg p-lg transition-all duration-200 hover:border-primary-container/50">
+                                        <div class="flex-1 flex flex-col justify-between">
+                                                <div>
+                                                        <div class="flex items-start justify-between mb-sm">
+                                                                <h3 class="font-h3 text-h3 text-on-background">
+                                                                        File Organizer Automation Tool
+                                                                </h3>
+                                                                <span
+                                                                        class="material-symbols-outlined text-outline-variant">
+                                                                        terminal
+                                                                </span>
+                                                        </div>
+                                                        <p
+                                                                class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                                                A lightweight, robust shell script utility designed to
+                                                                automatically parse, sort, and securely archive chaotic
+                                                                file structures on Linux-based systems. Improves
+                                                                workflow efficiency and enforces secure file permissions
+                                                                upon archival.
+                                                        </p>
+                                                        <div class="flex flex-wrap gap-xs mb-lg">
+                                                                <span
+                                                                        class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                        Bash
+                                                                </span>
+                                                                <span
+                                                                        class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                        Linux
+                                                                </span>
+                                                                <span
+                                                                        class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">
+                                                                        Automation
+                                                                </span>
+                                                        </div>
+                                                </div>
+                                                <div>
+                                                        <a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit"
+                                                                href="https://github.com/SAMIHZS/CYBERSECURITY-PROJECTS/tree/main/FILE%20ORGANIZER"
+                                                                target="_blank">
+                                                                <span class="material-symbols-outlined text-[18px]">
+                                                                        code
+                                                                </span>
+                                                                View on GitHub
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <div class="flex-1 hidden md:block">
+                                                <div
+                                                        class="bg-black border border-[#334155] rounded h-full p-4 flex flex-col">
+                                                        <div class="flex gap-2 mb-4">
+                                                                <div class="w-3 h-3 rounded-full bg-slate-700">
+                                                                </div>
+                                                                <div class="w-3 h-3 rounded-full bg-slate-700">
+                                                                </div>
+                                                                <div class="w-3 h-3 rounded-full bg-slate-700">
+                                                                </div>
+                                                        </div>
+                                                        <pre class="font-code text-code text-slate-300 overflow-x-auto"><code>#!/bin/bash
+# Secure File Organizer v1.2
 
-  <main>
+TARGET_DIR="/var/log/analysis"
+ARCHIVE_DIR="/mnt/secure_archive"
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero" id="home">
-      <div class="hero-bg-overlay"></div>
-      <div class="container hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Shaik Sami Hassan</h1>
-        <p class="hero-title">Cybersecurity Intern Aspirant | SOC Analyst (Trainee)</p>
-        <p class="hero-description">
-          Focused on Incident Response, Security Analysis, and Enterprise-Level Security Workflows.
-          Google-certified in cybersecurity and actively preparing for industry-recognized certifications.
+echo "[*] Initiating secure sort..."
+find "$TARGET_DIR" -type f -name "*.pcap" \
+     -exec mv {} "$ARCHIVE_DIR/pcaps/" \; \
+     -exec chmod 600 "$ARCHIVE_DIR/pcaps/"{} \;
+
+echo "[+] Operation completed securely."</code></pre>
+                                                </div>
+                                        </div>
+                                </article>
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="certifications">
+                        <header class="mb-lg">
+                                <h2 class="font-h2 text-h2 text-on-background mb-xs">
+                                        Professional Validations
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                                        A verified record of technical competence and security expertise across cloud
+                                        platforms, networks, and specialized security operations.
+                                </p>
+                        </header>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+                                <!-- Card 1: Google Cybersecurity -->
+                                <article class="bg-[#1e293b] border border-[#334155] rounded-xl overflow-hidden hover:border-primary transition-colors duration-200 flex flex-col group cert-card cursor-pointer"
+                                        data-cert-index="0">
+                                        <div class="h-48 w-full bg-surface-container-highest relative overflow-hidden">
+                                                <img alt="Google Cybersecurity Certificate Preview"
+                                                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                                                        data-alt="A sleek, modern digital certificate displayed on a dark, high-contrast interface. The certificate features subtle holographic security elements and a prominent tech company logo. The lighting is low-key with cool blue accents reflecting a sophisticated, corporate cybersecurity aesthetic. The overall mood conveys technical authority and precision."
+                                                        loading="lazy" src="assets/cert1.jpg" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-[#1e293b] to-transparent">
+                                                </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-grow">
+                                                <div class="flex items-center gap-2 mb-3">
+                                                        <span
+                                                                class="material-symbols-outlined text-primary text-[20px]">
+                                                                verified
+                                                        </span>
+                                                        <span class="font-label-sm text-label-sm text-primary">
+                                                                Google
+                                                        </span>
+                                                </div>
+                                                <h2 class="font-h3 text-h3 text-on-surface mb-2">
+                                                        Google Cybersecurity
+                                                </h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        Comprehensive foundation in security models, network defense,
+                                                        Linux, SQL, and Python for security automation.
+                                                </p>
+                                                <button class="w-full border border-[#334155] text-on-surface font-label-sm text-label-sm py-2 rounded-DEFAULT hover:border-primary hover:bg-primary/5 transition-all duration-200 flex items-center justify-center gap-2 cert-btn"
+                                                        data-cert-index="0">
+                                                        View Certificate
+                                                        <span class="material-symbols-outlined text-[16px]">
+                                                                zoom_in
+                                                        </span>
+                                                </button>
+                                        </div>
+                                </article>
+                                <!-- Card 2: Play It Safe -->
+                                <article class="bg-[#1e293b] border border-[#334155] rounded-xl overflow-hidden hover:border-primary transition-colors duration-200 flex flex-col group cert-card cursor-pointer"
+                                        data-cert-index="1">
+                                        <div class="h-48 w-full bg-surface-container-highest relative overflow-hidden">
+                                                <img alt="Risk Management Certificate Preview"
+                                                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                                                        data-alt="A macro shot of a complex data flow diagram displayed on a high-resolution dark monitor. Nodes and edges glow in subtle shades of cyan and primary blue against a deep black background. The image represents risk management and threat modeling in a corporate IT environment. The lighting emphasizes a modern, analytical, and secure atmosphere."
+                                                        loading="lazy" src="assets/cert2.jpg" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-[#1e293b] to-transparent">
+                                                </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-grow">
+                                                <div class="flex items-center gap-2 mb-3">
+                                                        <span
+                                                                class="material-symbols-outlined text-primary text-[20px]">
+                                                                verified
+                                                        </span>
+                                                        <span class="font-label-sm text-label-sm text-primary">
+                                                                Google
+                                                        </span>
+                                                </div>
+                                                <h2 class="font-h3 text-h3 text-on-surface mb-2">
+                                                        Play It Safe: Manage Security Risks
+                                                </h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        Methodologies for identifying vulnerabilities, assessing risk
+                                                        levels, and implementing mitigation strategies.
+                                                </p>
+                                                <button class="w-full border border-[#334155] text-on-surface font-label-sm text-label-sm py-2 rounded-DEFAULT hover:border-primary hover:bg-primary/5 transition-all duration-200 flex items-center justify-center gap-2 cert-btn"
+                                                        data-cert-index="1">
+                                                        View Certificate
+                                                        <span class="material-symbols-outlined text-[16px]">
+                                                                zoom_in
+                                                        </span>
+                                                </button>
+                                        </div>
+                                </article>
+                                <!-- Card 3: Connect and Protect -->
+                                <article class="bg-[#1e293b] border border-[#334155] rounded-xl overflow-hidden hover:border-primary transition-colors duration-200 flex flex-col group cert-card cursor-pointer"
+                                        data-cert-index="2">
+                                        <div class="h-48 w-full bg-surface-container-highest relative overflow-hidden">
+                                                <img alt="Network Security Certificate Preview"
+                                                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                                                        data-alt="A stylized visualization of network topology glowing with neon blue connections over a dark, matte surface. Server racks faintly visible in the background suggest enterprise infrastructure. The visual tone is high-tech, secure, and professional, aligning with modern cloud security aesthetics."
+                                                        loading="lazy" src="assets/cert3.jpg" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-[#1e293b] to-transparent">
+                                                </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-grow">
+                                                <div class="flex items-center gap-2 mb-3">
+                                                        <span
+                                                                class="material-symbols-outlined text-primary text-[20px]">
+                                                                verified
+                                                        </span>
+                                                        <span class="font-label-sm text-label-sm text-primary">
+                                                                Google
+                                                        </span>
+                                                </div>
+                                                <h2 class="font-h3 text-h3 text-on-surface mb-2">
+                                                        Connect and Protect: Networks and Network Security
+                                                </h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        Deep dive into network architecture, protocols, and securing
+                                                        communications against interception and tampering.
+                                                </p>
+                                                <button class="w-full border border-[#334155] text-on-surface font-label-sm text-label-sm py-2 rounded-DEFAULT hover:border-primary hover:bg-primary/5 transition-all duration-200 flex items-center justify-center gap-2 cert-btn"
+                                                        data-cert-index="2">
+                                                        View Certificate
+                                                        <span class="material-symbols-outlined text-[16px]">
+                                                                zoom_in
+                                                        </span>
+                                                </button>
+                                        </div>
+                                </article>
+                                <!-- Card 4: Linux and SQL -->
+                                <article class="bg-[#1e293b] border border-[#334155] rounded-xl overflow-hidden hover:border-primary transition-colors duration-200 flex flex-col group lg:col-span-2 cert-card cursor-pointer"
+                                        data-cert-index="3">
+                                        <div class="flex flex-col md:flex-row h-full">
+                                                <div
+                                                        class="md:w-2/5 h-48 md:h-auto bg-surface-container-highest relative overflow-hidden">
+                                                        <img alt="Linux and SQL Certificate Preview"
+                                                                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                                                                data-alt="A clean, minimalist abstract composition featuring lines of code blending into database schema representations. The colors are strictly restricted to deep slates, blacks, and electric blue highlights. The imagery conveys a sense of structured data analysis and system administration within a secure, technical environment."
+                                                                loading="lazy" src="assets/cert4.jpg" />
+                                                        <div
+                                                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#1e293b] to-transparent">
+                                                        </div>
+                                                </div>
+                                                <div class="p-6 flex flex-col justify-center flex-grow md:w-3/5">
+                                                        <div class="flex items-center gap-2 mb-3">
+                                                                <span
+                                                                        class="material-symbols-outlined text-primary text-[20px]">
+                                                                        verified
+                                                                </span>
+                                                                <span class="font-label-sm text-label-sm text-primary">
+                                                                        Google
+                                                                </span>
+                                                        </div>
+                                                        <h2 class="font-h3 text-h3 text-on-surface mb-2">
+                                                                Linux and SQL
+                                                        </h2>
+                                                        <p
+                                                                class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                                                Practical application of command-line tools for system
+                                                                administration and querying relational databases for
+                                                                security analysis.
+                                                        </p>
+                                                        <div class="mt-auto">
+                                                                <button class="border border-[#334155] text-on-surface font-label-sm text-label-sm py-2 px-6 rounded-DEFAULT hover:border-primary hover:bg-primary/5 transition-all duration-200 inline-flex items-center justify-center gap-2 cert-btn"
+                                                                        data-cert-index="3">
+                                                                        View Certificate
+                                                                        <span
+                                                                                class="material-symbols-outlined text-[16px]">
+                                                                                zoom_in
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </article>
+                                <!-- Card 5: Intro to Security in AI -->
+                                <article class="bg-[#1e293b] border border-[#334155] rounded-xl overflow-hidden hover:border-primary transition-colors duration-200 flex flex-col group cert-card cursor-pointer"
+                                        data-cert-index="4">
+                                        <div class="p-6 flex flex-col flex-grow relative overflow-hidden">
+                                                <!-- Subtle background texture instead of image for variety -->
+                                                <div class="absolute top-0 right-0 p-4 opacity-10">
+                                                        <span class="material-symbols-outlined text-[120px]">
+                                                                psychology
+                                                        </span>
+                                                </div>
+                                                <div class="relative z-10">
+                                                        <div class="flex items-center gap-2 mb-3">
+                                                                <span
+                                                                        class="material-symbols-outlined text-primary text-[20px]">
+                                                                        verified
+                                                                </span>
+                                                                <span class="font-label-sm text-label-sm text-primary">
+                                                                        Google
+                                                                </span>
+                                                        </div>
+                                                        <h2 class="font-h3 text-h3 text-on-surface mb-2">
+                                                                Introduction to Security in AI
+                                                        </h2>
+                                                        <p
+                                                                class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                                                Emerging concepts in securing machine learning models
+                                                                and understanding adversarial attacks on AI systems.
+                                                        </p>
+                                                </div>
+                                                <div class="mt-auto relative z-10">
+                                                        <button class="w-full border border-[#334155] text-on-surface font-label-sm text-label-sm py-2 rounded-DEFAULT hover:border-primary hover:bg-primary/5 transition-all duration-200 flex items-center justify-center gap-2 cert-btn"
+                                                                data-cert-index="4">
+                                                                View Certificate
+                                                                <span class="material-symbols-outlined text-[16px]">
+                                                                        zoom_in
+                                                                </span>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </article>
+                                <!-- Card 6: Deloitte Simulation -->
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="experience">
+                        <header class="mb-xl text-center md:text-left border-b border-surface-variant pb-lg">
+                                <h2 class="font-h2 text-h2 text-on-background mb-sm">
+                                        Professional Evolution
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                                        A chronological timeline of my journey through cyber security, academia, and
+                                        leadership.
+                                </p>
+                        </header>
+                        <div class="relative pl-sm md:pl-0">
+                                <!-- Central Line for Desktop -->
+                                <div
+                                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-surface-variant">
+                                </div>
+                                <!-- Left Line for Mobile -->
+                                <div class="md:hidden absolute left-[15px] top-0 bottom-0 w-px bg-surface-variant">
+                                </div>
+                                     <!-- Timeline Item 1: Education -->
+     <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-xl">
+      <!-- Timeline Dot -->
+      <div class="absolute left-[-5px] md:left-1/2 md:-ml-2 w-4 h-4 rounded-full bg-surface-dim border-2 border-secondary z-10">
+      </div>
+      <!-- Content (Left Side Desktop, Right Side Mobile) -->
+      <div class="w-full md:w-5/12 pl-lg md:pl-0 md:pr-lg md:text-right">
+       <div class="bg-surface-container-low border border-surface-variant p-md rounded-lg hover:border-secondary transition-colors duration-200">
+        <div class="flex items-center md:justify-end gap-xs mb-xs">
+         <span class="material-symbols-outlined text-secondary text-xl">
+          school
+         </span>
+         <h3 class="font-h3 text-h3 text-on-surface">
+          BCA (Honours) Student
+         </h3>
+        </div>
+        <p class="font-label-sm text-label-sm text-secondary mb-sm">
+         Academic Institution • 2024 - Present
         </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="SHAIKSAMIHASSANRESUME_compressed.pdf" class="btn btn-outline" download>Download Resume</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+         Pursuing advanced studies in computer applications with a strong foundation in programming, systems architecture, and foundational security concepts.
+        </p>
+        <div class="flex flex-wrap gap-xs md:justify-end">
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Computer Science
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Architecture
+         </span>
         </div>
+       </div>
       </div>
-    </section>
-
-    <!-- ========== ABOUT ME ========== -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              I am a BCA (Honours) student at Gayatri Vidya Parishad College with a focused interest in
-              <strong>Security Operations</strong>, <strong>Incident Response</strong>, and <strong>Cyber Risk Management</strong>.
-              I have completed the <strong>Google Cybersecurity Professional Certificate</strong> and the
-              <strong>Deloitte Cybersecurity Job Simulation</strong>, where I worked on simulated enterprise-level security scenarios.
-            </p>
-            <p>
-              I am currently strengthening my technical depth in networking, threat detection, and log analysis
-              while preparing for <strong>CompTIA Security+</strong> and <strong>CEH</strong> certifications.
-            </p>
-          </div>
-          <div class="about-details">
-            <div class="about-detail-item">
-              <span class="about-label">Name</span>
-              <span class="about-value">Shaik Sami Hassan</span>
-            </div>
-            <div class="about-detail-item">
-              <span class="about-label">Location</span>
-              <span class="about-value">Visakhapatnam, Andhra Pradesh, India</span>
-            </div>
-            <div class="about-detail-item">
-              <span class="about-label">Education</span>
-              <span class="about-value">BCA (Honours) – Gayatri Vidya Parishad College</span>
-            </div>
-            <div class="about-detail-item">
-              <span class="about-label">Focus</span>
-              <span class="about-value">SOC Analysis &amp; Incident Response</span>
-            </div>
-          </div>
-        </div>
+      <!-- Spacer for right side on Desktop -->
+      <div class="hidden md:block w-5/12">
       </div>
-    </section>
-
-    <!-- ========== SKILLS ========== -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="skills-grid">
-
-          <!-- Cybersecurity Knowledge -->
-          <div class="skill-card">
-            <div class="skill-card-icon">&#128274;</div>
-            <h3 class="skill-card-title">Cybersecurity Knowledge</h3>
-            <ul class="skill-list">
-              <li>CIA Triad</li>
-              <li>Risk Assessment</li>
-              <li>Incident Response (Fundamentals)</li>
-              <li>NIST Cybersecurity Framework</li>
-              <li>Security Controls</li>
-            </ul>
-          </div>
-
-          <!-- Tools & Platforms -->
-          <div class="skill-card">
-            <div class="skill-card-icon">&#128421;</div>
-            <h3 class="skill-card-title">Tools &amp; Platforms</h3>
-            <ul class="skill-list">
-              <li>Linux (Basic)</li>
-              <li>Simulated SIEM Exposure</li>
-              <li>Docker (Exposure)</li>
-              <li>PostgreSQL (Basic)</li>
-              <li>Command Line Tools</li>
-              <li>VS Code</li>
-            </ul>
-          </div>
-
-          <!-- Programming -->
-          <div class="skill-card">
-            <div class="skill-card-icon">&#128187;</div>
-            <h3 class="skill-card-title">Programming</h3>
-            <ul class="skill-list">
-              <li>C</li>
-              <li>Python</li>
-              <li>Java (Basic)</li>
-              <li>SQL (Basic)</li>
-            </ul>
-          </div>
-
-        </div>
+     </div>
+     <!-- Timeline Item 2: Deloitte -->
+     <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-xl">
+      <!-- Timeline Dot -->
+      <div class="absolute left-[-5px] md:left-1/2 md:-ml-2 w-4 h-4 rounded-full bg-surface-dim border-2 border-primary z-10">
       </div>
-    </section>
-
-    <!-- ========== EXPERIENCE ========== -->
-    <section class="section" id="experience">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2025</span>
-              <h3 class="timeline-title">Deloitte Australia – Cybersecurity Job Simulation</h3>
-              <ul class="timeline-details">
-                <li>Worked on simulated cybersecurity tasks related to incident management</li>
-                <li>Analysed security scenarios and applied best practices</li>
-                <li>Gained exposure to enterprise-level security workflows</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- Spacer for left side on Desktop -->
+      <div class="hidden md:block w-5/12">
       </div>
-    </section>
-
-    <!-- ========== PROJECTS ========== -->
-    <section class="section section-alt" id="projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="projects-grid">
-
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div class="project-card-header">
-              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3 class="project-card-title">Secure Collaboration Platform</h3>
-            <p class="project-card-subtitle">Hackathon Prototype</p>
-            <p class="project-card-desc">
-              Designed secure system architecture during a 24-hour hackathon. Focused on authentication
-              and secure communication flow. Worked as Team Leader.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">System Design</span>
-              <span class="tech-tag">Authentication</span>
-              <span class="tech-tag">Secure Comms</span>
-            </div>
-            <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div class="project-card-header">
-              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3 class="project-card-title">Cybersecurity Lab Simulations</h3>
-            <p class="project-card-subtitle">Hands-on Practice</p>
-            <p class="project-card-desc">
-              Practiced incident analysis and applied NIST CSF concepts. Simulated threat response workflows
-              to build practical security analysis skills.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">NIST CSF</span>
-              <span class="tech-tag">Incident Analysis</span>
-              <span class="tech-tag">Threat Response</span>
-            </div>
-            <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-
+      <!-- Content (Right Side Desktop & Mobile) -->
+      <div class="w-full md:w-5/12 pl-lg md:pl-lg">
+       <div class="bg-surface-container-low border border-surface-variant p-md rounded-lg hover:border-primary transition-colors duration-200">
+        <div class="flex items-center gap-xs mb-xs">
+         <span class="material-symbols-outlined text-primary text-xl">
+          work
+         </span>
+         <h3 class="font-h3 text-h3 text-on-surface">
+          Deloitte Cyber Job Simulation
+         </h3>
         </div>
+        <p class="font-label-sm text-label-sm text-primary mb-sm">
+         Forage • 2024
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+         Completed practical tasks in cybersecurity operations, threat analysis, and risk mitigation simulating a real-world corporate environment.
+        </p>
+        <div class="flex flex-wrap gap-xs">
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Threat Analysis
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Risk Mitigation
+         </span>
+        </div>
+       </div>
       </div>
-    </section>
-
-    <!-- ========== CERTIFICATIONS ========== -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="section-subtitle-line"></div>
-
-        <!-- Professional Certifications -->
-        <h3 class="cert-category-title">Professional Certifications</h3>
-        <div class="certs-grid">
-
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            </div>
-            <h3 class="cert-title">Google Cybersecurity Professional Certificate</h3>
-            <p class="cert-issuer">Issued by Google via Coursera</p>
-            <p class="cert-year">2025</p>
-            <ul class="cert-details">
-              <li>Risk Management</li>
-              <li>Incident Response Fundamentals</li>
-              <li>Security Controls</li>
-              <li>NIST CSF</li>
-              <li>Authentication &amp; Access Control</li>
-            </ul>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            </div>
-            <h3 class="cert-title">Connect and Protect: Networks and Network Security</h3>
-            <p class="cert-issuer">Issued by Google via Coursera</p>
-            <p class="cert-year">Jan 2026</p>
-            <ul class="cert-details">
-              <li>Network Architecture Fundamentals</li>
-              <li>Secure Communication Protocols</li>
-              <li>Threat Detection in Networks</li>
-              <li>Defensive Security Concepts</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- Industry Simulation -->
-        <h3 class="cert-category-title">Industry Simulation</h3>
-        <div class="certs-grid">
-
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <h3 class="cert-title">Deloitte Cybersecurity Job Simulation</h3>
-            <p class="cert-issuer">Deloitte Australia</p>
-            <p class="cert-year">2025</p>
-            <ul class="cert-details">
-              <li>Incident Management Simulation</li>
-              <li>Enterprise Security Workflow Exposure</li>
-              <li>Risk Analysis Practice</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- Competitive & Hackathon Achievements -->
-        <h3 class="cert-category-title">Competitive &amp; Hackathon Achievements</h3>
-        <div class="certs-grid">
-
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            </div>
-            <h3 class="cert-title">Smart India Hackathon 2025</h3>
-            <p class="cert-issuer">Innovation Cell, Ministry of Education</p>
-            <p class="cert-year">2025</p>
-            <ul class="cert-details">
-              <li>Selected to Regional Level</li>
-              <li>Government-Recognized Event</li>
-            </ul>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            </div>
-            <h3 class="cert-title">24-Hour Hogwarts Hackathon</h3>
-            <p class="cert-issuer">Dec 6–7, 2025</p>
-            <p class="cert-year">2025</p>
-            <ul class="cert-details">
-              <li>Intensive Development Participation</li>
-              <li>Real-Time Problem Solving Under Pressure</li>
-            </ul>
-          </div>
-
-        </div>
-
+     </div>
+     <!-- Timeline Item 3: Leadership -->
+     <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-xl">
+      <!-- Timeline Dot -->
+      <div class="absolute left-[-5px] md:left-1/2 md:-ml-2 w-4 h-4 rounded-full bg-surface-dim border-2 border-tertiary-container z-10">
       </div>
-    </section>
-
-    <!-- ========== LEARNING ROADMAP ========== -->
-    <section class="section section-alt" id="roadmap">
-      <div class="container">
-        <h2 class="section-title">Learning Roadmap</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="roadmap">
-
-          <div class="roadmap-step">
-            <div class="roadmap-marker">
-              <span class="roadmap-number">1</span>
-            </div>
-            <div class="roadmap-content">
-              <h3 class="roadmap-title">Currently Learning</h3>
-              <ul class="roadmap-list">
-                <li>Networking Fundamentals</li>
-                <li>Log Analysis</li>
-                <li>SIEM Basics</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="roadmap-step">
-            <div class="roadmap-marker">
-              <span class="roadmap-number">2</span>
-            </div>
-            <div class="roadmap-content">
-              <h3 class="roadmap-title">Preparing For</h3>
-              <ul class="roadmap-list">
-                <li>CompTIA Security+</li>
-                <li>CEH</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="roadmap-step">
-            <div class="roadmap-marker">
-              <span class="roadmap-number">3</span>
-            </div>
-            <div class="roadmap-content">
-              <h3 class="roadmap-title">Career Goal</h3>
-              <ul class="roadmap-list">
-                <li>SOC Analyst</li>
-                <li>Incident Response Specialist</li>
-              </ul>
-            </div>
-          </div>
-
+      <!-- Content (Left Side Desktop, Right Side Mobile) -->
+      <div class="w-full md:w-5/12 pl-lg md:pl-0 md:pr-lg md:text-right">
+       <div class="bg-surface-container-low border border-surface-variant p-md rounded-lg hover:border-tertiary-container transition-colors duration-200">
+        <div class="flex items-center md:justify-end gap-xs mb-xs">
+         <span class="material-symbols-outlined text-tertiary-container text-xl">
+          groups
+         </span>
+         <h3 class="font-h3 text-h3 text-on-surface">
+          SIH 2025 Team Leader
+         </h3>
         </div>
-      </div>
-    </section>
-
-    <!-- ========== CONTACT ========== -->
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="section-subtitle-line"></div>
-        <div class="contact-wrapper">
-
-          <div class="contact-info">
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:samihzs249@gmail.com">samihzs249@gmail.com</a>
-            </div>
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <a href="tel:+919100462366">9100462366</a>
-            </div>
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              <a href="https://www.linkedin.com/in/sami-hzs/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            </div>
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              <a href="https://github.com/SAMIHZS" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-            </div>
-          </div>
-
-          <form class="contact-form" onsubmit="return false;">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          </form>
-
+        <p class="font-label-sm text-label-sm text-tertiary-container mb-sm">
+         Hackathon Participant • 2024 - 2025
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+         Led a cross-functional team in the Smart India Hackathon, driving project ideation, technical architecture design, and final implementation delivery under strict deadlines.
+        </p>
+        <div class="flex flex-wrap gap-xs md:justify-end">
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Leadership
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Project Management
+         </span>
         </div>
+       </div>
       </div>
-    </section>
-
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p class="footer-text">&copy; 2026 Shaik Sami Hassan. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/sami-hzs/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="https://github.com/SAMIHZS" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </a>
-        <a href="mailto:samihzs249@gmail.com" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
+      <!-- Spacer for right side on Desktop -->
+      <div class="hidden md:block w-5/12">
       </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+     </div>
+     <!-- Timeline Item 4: Hackathon -->
+     <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-xl">
+      <!-- Timeline Dot -->
+      <div class="absolute left-[-5px] md:left-1/2 md:-ml-2 w-4 h-4 rounded-full bg-surface-dim border-2 border-secondary z-10">
+      </div>
+      <!-- Spacer for left side on Desktop -->
+      <div class="hidden md:block w-5/12">
+      </div>
+      <!-- Content (Right Side Desktop & Mobile) -->
+      <div class="w-full md:w-5/12 pl-lg md:pl-lg">
+       <div class="bg-surface-container-low border border-surface-variant p-md rounded-lg hover:border-secondary transition-colors duration-200">
+        <div class="flex items-center gap-xs mb-xs">
+         <span class="material-symbols-outlined text-secondary text-xl">
+          event
+         </span>
+         <h3 class="font-h3 text-h3 text-on-surface">
+          24 Hour Hackathon
+         </h3>
+        </div>
+        <p class="font-label-sm text-label-sm text-secondary mb-sm">
+         Participant • 2024
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+         Collaborated in a high-pressure 24-hour hackathon, rapidly prototyping and deploying innovative solutions.
+        </p>
+        <div class="flex flex-wrap gap-xs">
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Rapid Prototyping
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Teamwork
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Timeline Item 5: Intern -->
+     <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-xl">
+      <!-- Timeline Dot -->
+      <div class="absolute left-[-5px] md:left-1/2 md:-ml-2 w-4 h-4 rounded-full bg-surface-dim border-2 border-primary z-10">
+      </div>
+      <!-- Content (Left Side Desktop, Right Side Mobile) -->
+      <div class="w-full md:w-5/12 pl-lg md:pl-0 md:pr-lg md:text-right">
+       <div class="bg-surface-container-low border border-surface-variant p-md rounded-lg hover:border-primary transition-colors duration-200">
+        <div class="flex items-center md:justify-end gap-xs mb-xs">
+         <span class="material-symbols-outlined text-primary text-xl">
+          security
+         </span>
+         <h3 class="font-h3 text-h3 text-on-surface">
+          Cyber Security Intern
+         </h3>
+        </div>
+        <p class="font-label-sm text-label-sm text-primary mb-sm">
+         Future Interns • April 2026 - Present
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+         Specializing in reconnaissance, technical analysis, and developing comprehensive security documentation within enterprise Linux environments.
+        </p>
+        <div class="flex flex-wrap gap-xs md:justify-end">
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Linux
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Reconnaissance
+         </span>
+         <span class="bg-surface-container-highest px-2 py-1 rounded text-label-sm font-label-sm text-on-surface">
+          Analysis
+         </span>
+        </div>
+       </div>
+      </div>
+      <!-- Spacer for right side on Desktop -->
+      <div class="hidden md:block w-5/12">
+      </div>
+     </div>
+                                </div>
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="labs">
+                        <header class="mb-xl text-center md:text-left">
+                                <h2 class="font-h2 text-h2 text-on-surface mb-xs">
+                                        Tactical Labs &amp; Research
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                                        Continuous practical engagement and methodology development across offensive and
+                                        defensive paradigms.
+                                </p>
+                        </header>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- TryHackMe Progress (Spans 12 columns now since it's the only one) -->
+                                <section
+                                        class="md:col-span-12 max-w-4xl mx-auto w-full bg-surface-variant border border-outline-variant rounded-lg p-lg flex flex-col justify-between reveal">
+                                        <div>
+                                                <div class="flex items-center justify-between mb-md">
+                                                        <h2
+                                                                class="font-h3 text-h3 text-on-surface flex items-center gap-xs">
+                                                                <span class="material-symbols-outlined text-primary">
+                                                                        terminal
+                                                                </span>
+                                                                TryHackMe
+                                                        </h2>
+                                                        <span
+                                                                class="flex items-center gap-1 font-label-sm text-label-sm text-secondary-container">
+                                                                <span class="w-2 h-2 rounded-full bg-secondary">
+                                                                </span>
+                                                                Active
+                                                        </span>
+                                                </div>
+                                                <div class="mb-sm">
+                                                        <p
+                                                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-unit">
+                                                                Current Rank
+                                                        </p>
+                                                        <p class="font-h2 text-h2 text-on-surface">
+                                                                Pathfinder
+                                                        </p>
+                                                </div>
+                                                <div class="space-y-sm">
+                                                        <div>
+                                                                <div
+                                                                        class="flex justify-between font-label-sm text-label-sm mb-unit">
+                                                                        <span class="text-on-surface">
+                                                                                Jr Penetration Tester
+                                                                        </span>
+                                                                        <span class="text-primary">
+                                                                                100%
+                                                                        </span>
+                                                                </div>
+                                                                <div
+                                                                        class="w-full bg-surface-container-highest rounded-full h-2">
+                                                                        <div class="bg-primary h-2 rounded-full"
+                                                                                style="width: 100%">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div>
+                                                                <div
+                                                                        class="flex justify-between font-label-sm text-label-sm mb-unit">
+                                                                        <span class="text-on-surface">
+                                                                                CompTIA Pentest+
+                                                                        </span>
+                                                                        <span class="text-primary">
+                                                                                85%
+                                                                        </span>
+                                                                </div>
+                                                                <div
+                                                                        class="w-full bg-surface-container-highest rounded-full h-2">
+                                                                        <div class="bg-primary h-2 rounded-full"
+                                                                                style="width: 85%">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-md pt-sm border-t border-outline-variant flex items-center justify-between">
+                                                <p class="font-code text-code text-on-surface-variant">
+                                                        Top 35% Global Ranking • 10 Rooms
+                                                </p>
+                                                <a href="https://tryhackme.com/p/samihzs249?tab=completed-rooms" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded hover:bg-inverse-primary hover:text-on-primary transition-colors flex items-center gap-2">
+                                                    View Profile
+                                                    <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                                                </a>
+                                        </div>
+                                </section>
+                        </div>
+                </section>
+                <section class="py-xl reveal" id="contact">
+                        <header class="mb-xl text-center md:text-left">
+                                <h2 class="font-h1 text-h1 text-on-surface mb-xs">
+                                        Get In Touch
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                                        Let's discuss cybersecurity, potential opportunities, or collaborative projects.
+                                </p>
+                        </header>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                                <div class="bg-surface-container p-lg rounded-xl border border-surface-variant">
+                                        <h3 class="font-h3 text-h3 text-on-surface mb-md">
+                                                Contact Information
+                                        </h3>
+                                        <div class="flex flex-col gap-md">
+                                                <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary transition-colors"
+                                                        href="mailto:samihzs249@gmail.com">
+                                                        <span class="material-symbols-outlined">
+                                                                mail
+                                                        </span>
+                                                        samihzs249@gmail.com
+                                                </a>
+                                                <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary transition-colors"
+                                                        href="tel:+919100462366">
+                                                        <span class="material-symbols-outlined">
+                                                                phone
+                                                        </span>
+                                                        +91 9100462366
+                                                </a>
+                                                <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary transition-colors"
+                                                        href="https://www.linkedin.com/in/sami-hzs/" target="_blank">
+                                                        <span class="material-symbols-outlined">
+                                                                link
+                                                        </span>
+                                                        LinkedIn Profile
+                                                </a>
+                                                <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary transition-colors"
+                                                        href="https://github.com/SAMIHZS" target="_blank">
+                                                        <span class="material-symbols-outlined">
+                                                                code
+                                                        </span>
+                                                        GitHub Profile
+                                                </a>
+                                        </div>
+                                </div>
+                                <div class="bg-surface-container p-lg rounded-xl border border-surface-variant">
+                                        <form class="flex flex-col gap-sm" onsubmit="return false;">
+                                                <div>
+                                                        <label class="font-label-sm text-label-sm text-on-surface mb-xs block"
+                                                                for="name">
+                                                                Name
+                                                        </label>
+                                                        <input class="w-full bg-surface-variant border border-outline-variant rounded p-sm text-on-surface focus:outline-none focus:border-primary transition-colors"
+                                                                id="name" name="name" placeholder="Your Name"
+                                                                required="" type="text" />
+                                                </div>
+                                                <div>
+                                                        <label class="font-label-sm text-label-sm text-on-surface mb-xs block"
+                                                                for="email">
+                                                                Email
+                                                        </label>
+                                                        <input class="w-full bg-surface-variant border border-outline-variant rounded p-sm text-on-surface focus:outline-none focus:border-primary transition-colors"
+                                                                id="email" name="email" placeholder="your@email.com"
+                                                                required="" type="email" />
+                                                </div>
+                                                <div>
+                                                        <label class="font-label-sm text-label-sm text-on-surface mb-xs block"
+                                                                for="message">
+                                                                Message
+                                                        </label>
+                                                        <textarea
+                                                                class="w-full bg-surface-variant border border-outline-variant rounded p-sm text-on-surface focus:outline-none focus:border-primary transition-colors"
+                                                                id="message" name="message"
+                                                                placeholder="Your message..." required=""
+                                                                rows="4"></textarea>
+                                                </div>
+                                                <button class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded mt-sm hover:bg-inverse-primary hover:text-on-primary transition-colors ease-in-out duration-200"
+                                                        type="submit">
+                                                        Send Message
+                                                </button>
+                                        </form>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <footer class="bg-slate-950 w-full py-12 border-t border-slate-800 flat font-inter text-xs text-slate-500">
+                <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-sm font-bold text-slate-300">
+                                © 2024 Shaik Sami Hassan. Precision Security &amp; Engineering.
+                        </p>
+                        <div class="flex gap-md">
+                                <a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-[18px]">
+                                                link
+                                        </span>
+                                        LinkedIn
+                                </a>
+                                <a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-[18px]">
+                                                code
+                                        </span>
+                                        GitHub
+                                </a>
+                                <a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-[18px]">
+                                                terminal
+                                        </span>
+                                        TryHackMe
+                                </a>
+                                <a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-[18px]">
+                                                mail
+                                        </span>
+                                        Email
+                                </a>
+                        </div>
+                </div>
+        </footer>
+        <div class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center opacity-0 transition-opacity duration-300"
+                id="certModal">
+                <div class="relative w-full max-w-5xl p-4 flex flex-col items-center">
+                        <button class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-black/50 p-2 rounded-full"
+                                id="closeModal">
+                                <span class="material-symbols-outlined text-3xl">
+                                        close
+                                </span>
+                        </button>
+                        <div class="relative flex items-center justify-center w-full">
+                                <button class="absolute left-0 md:-left-12 text-white hover:text-primary p-2 bg-black/50 rounded-full transition-colors hidden md:block"
+                                        id="prevCert">
+                                        <span class="material-symbols-outlined text-4xl">
+                                                chevron_left
+                                        </span>
+                                </button>
+                                <img alt="Certificate"
+                                        class="max-h-[85vh] w-auto max-w-full object-contain rounded border border-[#334155] shadow-2xl transition-transform duration-300 cursor-zoom-in"
+                                        id="modalImg" loading="lazy" src="" />
+                                <button class="absolute right-0 md:-right-12 text-white hover:text-primary p-2 bg-black/50 rounded-full transition-colors hidden md:block"
+                                        id="nextCert">
+                                        <span class="material-symbols-outlined text-4xl">
+                                                chevron_right
+                                        </span>
+                                </button>
+                        </div>
+                        <div class="flex justify-between w-full md:hidden mt-4 px-8">
+                                <button class="text-white hover:text-primary p-2 bg-slate-800 rounded-full transition-colors"
+                                        id="prevCertMob">
+                                        <span class="material-symbols-outlined text-3xl">
+                                                chevron_left
+                                        </span>
+                                </button>
+                                <button class="text-white hover:text-primary p-2 bg-slate-800 rounded-full transition-colors"
+                                        id="nextCertMob">
+                                        <span class="material-symbols-outlined text-3xl">
+                                                chevron_right
+                                        </span>
+                                </button>
+                        </div>
+                </div>
+        </div>
+        <script src="script.js">
+        </script>
 </body>
+
 </html>
