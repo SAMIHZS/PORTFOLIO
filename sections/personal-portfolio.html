@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shaik Sami Hassan - Cyber Security Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#4d8eff",
+                    "on-tertiary": "#502400",
+                    "tertiary": "#ffb786",
+                    "error-container": "#93000a",
+                    "on-surface-variant": "#c2c6d6",
+                    "secondary": "#4edea3",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "on-primary": "#002e6a",
+                    "error": "#ffb4ab",
+                    "surface-bright": "#363941",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-secondary-fixed-variant": "#005236",
+                    "inverse-primary": "#005ac2",
+                    "surface-container-highest": "#32353c",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-container": "#00a572",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "on-tertiary-fixed": "#311400",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-secondary": "#003824",
+                    "surface-container": "#1d2027",
+                    "on-primary-fixed-variant": "#004395",
+                    "inverse-on-surface": "#2e3038",
+                    "on-secondary-container": "#00311f",
+                    "surface": "#10131a",
+                    "on-primary-fixed": "#001a42",
+                    "on-tertiary-container": "#461f00",
+                    "background": "#10131a",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffdcc6",
+                    "surface-dim": "#10131a",
+                    "surface-variant": "#32353c",
+                    "surface-tint": "#adc6ff",
+                    "outline-variant": "#424754",
+                    "on-primary-container": "#00285d",
+                    "primary": "#adc6ff",
+                    "inverse-surface": "#e1e2ec",
+                    "surface-container-lowest": "#0b0e15",
+                    "surface-container-high": "#272a31",
+                    "primary-fixed": "#d8e2ff",
+                    "secondary-fixed": "#6ffbbe",
+                    "on-surface": "#e1e2ec",
+                    "on-background": "#e1e2ec",
+                    "surface-container-low": "#191b23",
+                    "tertiary-container": "#df7412",
+                    "on-error": "#690005",
+                    "outline": "#8c909f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "1.5rem",
+                    "sm": "1rem",
+                    "lg": "2.5rem",
+                    "xs": "0.5rem",
+                    "unit": "4px",
+                    "xl": "4rem",
+                    "gutter": "1.5rem",
+                    "max-width": "1200px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h2": ["Inter"],
+                    "h3": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "code": ["monospace"],
+                    "h1": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["30px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { scroll-behavior: smooth; }
+        .grid-bg {
+            background-image: linear-gradient(to right, rgba(140, 144, 159, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(140, 144, 159, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- Navigation -->
+<nav class="bg-slate-950/80 backdrop-blur-md font-inter tracking-tight docked full-width top-0 sticky z-50 border-b border-slate-800 flat no shadows text-slate-400">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16 w-full max-w-[1200px]">
+<a class="text-xl font-black tracking-tighter text-slate-50" href="#">SSH</a>
+<div class="hidden md:flex gap-md items-center">
+<a class="text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1 hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform" href="#projects">Projects</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform" href="#certifications">Certifications</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform" href="#experience">Experience</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform" href="#labs">Labs</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 scale-95 active:scale-90 transition-transform" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded border border-transparent hover:bg-inverse-primary hover:text-on-primary transition-colors ease-in-out duration-200 hidden md:block">
+                Resume
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-gutter grid-bg">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center py-xl" id="home">
+<div class="max-w-3xl">
+<p class="font-code text-code text-primary mb-sm">&gt;$ whoami</p>
+<h1 class="font-h1 text-h1 text-on-background mb-sm">SHAIK SAMI HASSAN</h1>
+<h2 class="font-h3 text-h3 text-outline mb-md">Cyber Security Intern | Security Analyst Aspirant | VAPT Learner</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                    Dedicated BCA (Honours) student meticulously building hands-on experience in defensive security, vulnerability assessment, and security operations. Focused on translating theoretical knowledge into practical, robust security architectures.
+                </p>
+<div class="flex flex-wrap gap-sm">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:bg-inverse-primary hover:text-on-primary transition-colors ease-in-out duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">description</span>
+                        View Resume
+                    </button>
+<button class="bg-transparent text-primary border border-outline font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:border-primary hover:bg-primary/5 transition-all ease-in-out duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">download</span>
+                        Download Resume
+                    </button>
+<a class="bg-transparent text-primary border border-outline font-label-sm text-label-sm px-md py-sm rounded flex items-center gap-xs hover:border-primary hover:bg-primary/5 transition-all ease-in-out duration-200" href="#contact">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">mail</span>
+                        Contact
+                    </a>
+</div>
+</div>
+</section>
+<!-- About & Skills Bento -->
+<section class="py-xl" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- About Block -->
+<div class="md:col-span-7 bg-surface-container p-lg rounded-xl border border-surface-variant">
+<h3 class="font-h3 text-h3 text-on-background flex items-center gap-xs mb-md border-b border-surface-variant pb-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                        System Overview
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">
+                        I am a Bachelor of Computer Applications (Honours) student with a rigorous focus on Cybersecurity. My current academic and practical trajectory is centered around Vulnerability Assessment and Penetration Testing (VAPT), Security Operations Center (SOC) methodologies, and establishing strong defensive postures.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        I thrive in environments that demand meticulous analysis and continuous learning, aiming to contribute meaningfully to organizational security resilience.
+                    </p>
+</div>
+<!-- Skills Block -->
+<div class="md:col-span-5 bg-surface-container p-lg rounded-xl border border-surface-variant">
+<h3 class="font-h3 text-h3 text-on-background flex items-center gap-xs mb-md border-b border-surface-variant pb-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">build</span>
+                        Toolkit
+                    </h3>
+<div class="space-y-md">
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-xs">Cybersecurity</p>
+<div class="flex flex-wrap gap-unit">
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Threat Awareness</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">VAPT Basics</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">SOC Fundamentals</span>
+</div>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-xs">Tools &amp; Systems</p>
+<div class="flex flex-wrap gap-unit">
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Kali Linux</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Nmap</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Wireshark</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">TCP/IP</span>
+</div>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-xs">Programming</p>
+<div class="flex flex-wrap gap-unit">
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Python</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">C</span>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-xs py-unit rounded">Bash</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Projects -->
+<section class="py-xl" id="projects">
+<h2 class="font-h2 text-h2 text-on-background mb-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">folder_open</span>
+                 Active Deployments &amp; Experience
+            </h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-md mb-xl">
+<!-- Experience Timeline Card -->
+<div class="lg:col-span-1 bg-surface-container p-lg rounded-xl border border-surface-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<h3 class="font-h3 text-h3 text-on-background mb-md">Operational History</h3>
+<div class="relative pl-sm border-l border-surface-variant">
+<div class="mb-md relative">
+<span class="absolute -left-[21px] top-1 w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.8)]"></span>
+<p class="font-label-sm text-label-sm text-secondary mb-unit">April 2026 - Present</p>
+<p class="font-body-md text-body-md text-on-background font-medium">Cyber Security Intern</p>
+<p class="font-body-md text-body-md text-outline">Future Interns</p>
+</div>
+<div class="relative opacity-50">
+<span class="absolute -left-[21px] top-1 w-2 h-2 rounded-full bg-outline"></span>
+<p class="font-label-sm text-label-sm text-outline mb-unit">2024 - Present</p>
+<p class="font-body-md text-body-md text-on-background font-medium">BCA (Honours)</p>
+<p class="font-body-md text-body-md text-outline">Academic Focus</p>
+</div>
+</div>
+</div>
+<!-- Projects Grids -->
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Project Card 1 -->
+<div class="bg-surface-container p-md rounded-xl border border-surface-variant hover:border-primary transition-colors duration-200 group flex flex-col h-full">
+<div class="flex justify-between items-start mb-sm">
+<span class="material-symbols-outlined text-primary text-2xl">security</span>
+<a class="text-outline hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-background font-medium mb-xs group-hover:text-primary transition-colors">samihzs.in Assessment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Comprehensive website security assessment identifying misconfigurations and potential attack vectors on personal infrastructure.</p>
+<div class="flex gap-unit mt-auto">
+<span class="bg-surface-variant text-on-surface font-code text-[12px] px-xs py-unit rounded">Burp Suite</span>
+<span class="bg-surface-variant text-on-surface font-code text-[12px] px-xs py-unit rounded">OSINT</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-surface-container p-md rounded-xl border border-surface-variant hover:border-primary transition-colors duration-200 group flex flex-col h-full">
+<div class="flex justify-between items-start mb-sm">
+<span class="material-symbols-outlined text-primary text-2xl">library_books</span>
+<a class="text-outline hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-background font-medium mb-xs group-hover:text-primary transition-colors">SecLearning Repo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Curated repository of cybersecurity concepts, methodologies, and practical scripts developed during active learning phases.</p>
+<div class="flex gap-unit mt-auto">
+<span class="bg-surface-variant text-on-surface font-code text-[12px] px-xs py-unit rounded">Markdown</span>
+<span class="bg-surface-variant text-on-surface font-code text-[12px] px-xs py-unit rounded">Git</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 border-t border-slate-800 flat font-inter text-xs text-slate-500">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm font-bold text-slate-300">© 2024 Shaik Sami Hassan. Precision Security &amp; Engineering.</p>
+<div class="flex gap-md">
+<a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit" href="#">
+<span class="material-symbols-outlined text-[18px]">link</span> LinkedIn
+                </a>
+<a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                </a>
+<a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span> TryHackMe
+                </a>
+<a class="text-slate-500 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100 flex items-center gap-unit" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span> Email
+                </a>
+</div>
+</div>
+</footer>
+</body></html>

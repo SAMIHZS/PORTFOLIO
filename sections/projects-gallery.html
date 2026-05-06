@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SAMI.SEC - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#ffdcc6",
+                        "primary-fixed-dim": "#adc6ff",
+                        "tertiary-fixed-dim": "#ffb786",
+                        "tertiary-container": "#df7412",
+                        "surface-dim": "#10131a",
+                        "on-secondary-fixed": "#002113",
+                        "on-surface-variant": "#c2c6d6",
+                        "on-secondary-container": "#00311f",
+                        "surface-container-highest": "#32353c",
+                        "primary-fixed": "#d8e2ff",
+                        "on-primary-container": "#00285d",
+                        "on-surface": "#e1e2ec",
+                        "primary-container": "#4d8eff",
+                        "secondary": "#4edea3",
+                        "on-secondary": "#003824",
+                        "outline-variant": "#424754",
+                        "surface": "#10131a",
+                        "secondary-fixed-dim": "#4edea3",
+                        "secondary-container": "#00a572",
+                        "tertiary": "#ffb786",
+                        "on-tertiary-fixed": "#311400",
+                        "surface-container-low": "#191b23",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-tertiary-container": "#461f00",
+                        "on-primary-fixed-variant": "#004395",
+                        "primary": "#adc6ff",
+                        "surface-variant": "#32353c",
+                        "on-primary": "#002e6a",
+                        "inverse-primary": "#005ac2",
+                        "error-container": "#93000a",
+                        "background": "#10131a",
+                        "surface-container-lowest": "#0b0e15",
+                        "surface-tint": "#adc6ff",
+                        "surface-container-high": "#272a31",
+                        "inverse-on-surface": "#2e3038",
+                        "outline": "#8c909f",
+                        "surface-container": "#1d2027",
+                        "on-error-container": "#ffdad6",
+                        "inverse-surface": "#e1e2ec",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-tertiary": "#502400",
+                        "on-background": "#e1e2ec",
+                        "on-tertiary-fixed-variant": "#723600",
+                        "surface-bright": "#363941",
+                        "on-primary-fixed": "#001a42",
+                        "error": "#ffb4ab"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        xs: "0.5rem",
+                        xl: "4rem",
+                        sm: "1rem",
+                        lg: "2.5rem",
+                        "max-width": "1200px",
+                        gutter: "1.5rem",
+                        md: "1.5rem",
+                        unit: "4px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter", "sans-serif"],
+                        h2: ["Inter", "sans-serif"],
+                        code: ["monospace"],
+                        "body-md": ["Inter", "sans-serif"],
+                        h3: ["Inter", "sans-serif"],
+                        "label-sm": ["Inter", "sans-serif"],
+                        h1: ["Inter", "sans-serif"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        h2: ["30px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        code: ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        h3: ["24px", { lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "label-sm": ["14px", { lineHeight: "1", letterSpacing: "0.02em", fontWeight: "500" }],
+                        h1: ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-slate-950/80 backdrop-blur-md text-blue-500 font-inter tracking-tight fixed top-0 w-full z-50 border-b border-slate-800">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
+<a class="text-xl font-bold tracking-tighter text-slate-50 dark:text-slate-50" href="#">SAMI.SEC</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-500 border-b-2 border-blue-500 pb-1 font-body-md text-body-md" href="#">Projects</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 font-body-md text-body-md" href="#">Certifications</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 font-body-md text-body-md" href="#">Experience</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 font-body-md text-body-md" href="#">Labs</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-blue-400 transition-all duration-200 font-body-md text-body-md" href="#">Contact</a>
+</div>
+<a class="hidden md:flex items-center justify-center px-4 py-2 bg-primary-container text-on-primary-container rounded font-label-sm text-label-sm hover:opacity-90 transition-opacity" href="#">
+                Resume
+            </a>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-6">
+<div class="max-w-max-width mx-auto">
+<!-- Header Section -->
+<header class="mb-xl text-center md:text-left">
+<h1 class="font-h1 text-h1 text-on-background mb-4">Strategic Deployments</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                    A curated selection of technical projects focusing on vulnerability assessment, custom automation, and infrastructure security. Each deployment demonstrates applied methodologies in risk mitigation and secure software development lifecycle practices.
+                </p>
+</header>
+<!-- Projects Grid (Bento/Asymmetric Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project 1: Featured (Takes 2 columns on lg screens) -->
+<article class="col-span-1 md:col-span-2 lg:col-span-2 bg-[#1e293b] border border-[#334155] border-t-2 border-t-primary-container rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+<div>
+<div class="flex items-start justify-between mb-sm">
+<h2 class="font-h2 text-h2 text-on-background">Website Security Assessment - samihzs.in</h2>
+<span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                            Comprehensive Vulnerability Assessment and Penetration Testing (VAPT) executed on personal infrastructure. Identified critical misconfigurations, applied security patches, and hardened the web server against common OWASP Top 10 vectors.
+                        </p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Burp Suite</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Nmap</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Linux Servers</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Web App Sec</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit" href="https://github.com/SAMIHZS/FUTURE_CS_01" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                            View on GitHub
+                        </a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="col-span-1 bg-[#1e293b] border border-[#334155] rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+<div>
+<div class="flex items-start justify-between mb-sm">
+<h3 class="font-h3 text-h3 text-on-background">Cybersecurity Learning Repository</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                            SecLearning: A structured, publicly available repository documenting ongoing research, lab walk-throughs, and methodologies for malware analysis and incident response.
+                        </p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Markdown</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Git</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Documentation</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit" href="https://github.com/SAMIHZS/CYBERSECURITY-PROJECTS" target="_blank">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+                            Explore Repository
+                        </a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="col-span-1 bg-[#1e293b] border border-[#334155] rounded flex flex-col justify-between p-lg transition-all duration-200 hover:border-primary-container/50">
+<div>
+<div class="flex items-start justify-between mb-sm">
+<h3 class="font-h3 text-h3 text-on-background">Attendance Management System</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                            A secure backend system developed for tracking attendance metrics, focusing on input sanitization, secure session handling, and database optimization.
+                        </p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Python</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">SQL</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Cryptography</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit" href="https://github.com/SAMIHZS/ATTENDANCE-SYSTEM" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                            View on GitHub
+                        </a>
+</div>
+</article>
+<!-- Project 4: Code block emphasis -->
+<article class="col-span-1 md:col-span-2 lg:col-span-2 bg-[#1e293b] border border-[#334155] rounded flex flex-col lg:flex-row gap-lg p-lg transition-all duration-200 hover:border-primary-container/50">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-sm">
+<h3 class="font-h3 text-h3 text-on-background">File Organizer Automation Tool</h3>
+<span class="material-symbols-outlined text-outline-variant">terminal</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                A lightweight, robust shell script utility designed to automatically parse, sort, and securely archive chaotic file structures on Linux-based systems. Improves workflow efficiency and enforces secure file permissions upon archival.
+                            </p>
+<div class="flex flex-wrap gap-xs mb-lg">
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Bash</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Linux</span>
+<span class="bg-[#1e293b] border border-[#334155] text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">Automation</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-xs border border-[#334155] text-on-background bg-transparent px-4 py-2 rounded font-label-sm text-label-sm hover:border-primary-container hover:bg-primary-container/5 transition-all duration-200 w-fit" href="https://github.com/SAMIHZS/CYBERSECURITY-PROJECTS/tree/main/FILE%20ORGANIZER" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                                View on GitHub
+                            </a>
+</div>
+</div>
+<div class="flex-1 hidden md:block">
+<div class="bg-black border border-[#334155] rounded h-full p-4 flex flex-col">
+<div class="flex gap-2 mb-4">
+<div class="w-3 h-3 rounded-full bg-slate-700"></div>
+<div class="w-3 h-3 rounded-full bg-slate-700"></div>
+<div class="w-3 h-3 rounded-full bg-slate-700"></div>
+</div>
+<pre class="font-code text-code text-slate-300 overflow-x-auto"><code>#!/bin/bash
+# Secure File Organizer v1.2
+
+TARGET_DIR="/var/log/analysis"
+ARCHIVE_DIR="/mnt/secure_archive"
+
+echo "[*] Initiating secure sort..."
+find "$TARGET_DIR" -type f -name "*.pcap" \
+     -exec mv {} "$ARCHIVE_DIR/pcaps/" \; \
+     -exec chmod 600 "$ARCHIVE_DIR/pcaps/"{} \;
+
+echo "[+] Operation completed securely."</code></pre>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 text-blue-500 text-sm font-inter text-slate-500 w-full py-12 border-t border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-bold text-slate-300">
+                © 2024 Shaik Sami Hassan. Secured &amp; Encrypted.
+            </div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-blue-400 transition-colors ease-in-out duration-200" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors ease-in-out duration-200" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors ease-in-out duration-200" href="#">TryHackMe</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors ease-in-out duration-200" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
