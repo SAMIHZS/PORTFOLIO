@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 4. Certificate Lightbox ---
     const certImages = [
-        "assets/cert1.jpg",
-        "assets/cert2.jpg",
-        "assets/cert3.jpg",
-        "assets/cert4.jpg",
-        "assets/cert5.jpg"
+        "assets/images/certifications/cert1.jpg",
+        "assets/images/certifications/cert2.jpg",
+        "assets/images/certifications/cert3.jpg",
+        "assets/images/certifications/cert4.jpg",
+        "assets/images/certifications/cert5.jpg"
     ];
     let currentCertIndex = 0;
 
