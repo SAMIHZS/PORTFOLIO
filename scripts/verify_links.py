@@ -11,8 +11,12 @@ hrefs = re.findall(r'href="([^"]+)"', content)
 missing = []
 
 for link in srcs + hrefs:
-    # Skip external links and anchors
-    if link.startswith('http') or link.startswith('#') or link.startswith('mailto:'):
+    # Skip external links, anchors, mailto, tel, etc.
+    if (link.startswith('http') or 
+        link.startswith('#') or 
+        link.startswith('mailto:') or 
+        link.startswith('tel:') or 
+        link.startswith('data:')):
         continue
     
     # Path might be url encoded, like spaces to %20
@@ -28,6 +32,8 @@ for link in srcs + hrefs:
 if missing:
     print("Found missing links:")
     for m in set(missing):
-        print(m)
+        # Safely print Unicode on Windows terminal
+        print(m.encode('ascii', 'ignore').decode('ascii'))
 else:
     print("All local links in index.html are valid!")
+
